@@ -8,8 +8,31 @@
 </head>
 <body>
 
-<div class="container">
-    <%= yield %>
-</div>
+<nav class="menu" tabindex="0">
+    <div class="smartphone-menu-trigger"></div>
+    <header class="avatar">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
+        <h2>Joshua Toy</h2>
+    </header>
+    <ul>
+        <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
+        <li tabindex="0" class="icon-customers"><span>Customers</span></li>
+        <li tabindex="0" class="icon-users"><span>Users</span></li>
+        <li tabindex="0" class="icon-settings"><span>Settings</span></li>
+        <li tabindex="0" class="icon-settings"><span><%= link_to 'New Blogpost', new_blogpost_path %></span></li>
+
+    </ul>
+</nav>
+
+<main>
+    <div class="helper">
+        RESIZE THE WINDOW
+        <span>Breakpoints on 900px and 400px</span>
+    </div>
+    <div class="container">
+        <%= yield %>
+    </div>
+</main>
+
 </body>
 </html>
