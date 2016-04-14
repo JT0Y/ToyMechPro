@@ -5,30 +5,35 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
 </head>
 <body>
-
+<p id="notice"><%= notice %></p>
 <nav class="menu" tabindex="0">
     <div class="smartphone-menu-trigger"></div>
     <header class="avatar">
-        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" />
+        <%= image_tag "plat1.png", style: "background-color: #3498db;" %>
         <h2>Joshua Toy</h2>
     </header>
-    <ul>
-        <li tabindex="0" class="icon-dashboard"><span>Dashboard</span></li>
-        <li tabindex="0" class="icon-customers"><span>Customers</span></li>
-        <li tabindex="0" class="icon-users"><span>Users</span></li>
-        <li tabindex="0" class="icon-settings"><span>Settings</span></li>
-        <li tabindex="0" class="icon-settings"><span><%= link_to 'New Blogpost', new_blogpost_path %></span></li>
+    <ul class="menu-items">
+        <li tabindex="0"><i class="fa fa-home" aria-hidden="true"></i> <span><%= link_to 'Home', root_path %></span></li>
+        <li tabindex="0"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <span>Blog</span></li>
+        <li tabindex="0"><i class="fa fa-envelope" aria-hidden="true"></i> <span>Contact</span></li>
+        <li tabindex="0"><i class="fa fa-user" aria-hidden="true"></i> <span>About</span></li>
+        <br>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'New Blogpost', new_blogpost_path %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Dictionary', "http://dictionary.bitballoon.com/" %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Random Quotes', '#' %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Landing Page', '#' %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Balern Education', '#' %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Mickey\'s Fishing', '#' %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Rock Paper Scissors', '#' %></span></li>
+        <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Balern Education', '#' %></span></li>
 
     </ul>
 </nav>
 
 <main>
-    <div class="helper">
-        RESIZE THE WINDOW
-        <span>Breakpoints on 900px and 400px</span>
-    </div>
     <div class="container">
         <%= yield %>
     </div>

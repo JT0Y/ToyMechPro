@@ -1,19 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blogpost.title %>
-</p>
+<article>
+    <header>
+        <h2><%= @blogpost.title %></h2>
+    </header>
 
-<p>
-  <strong>Body:</strong>
-  <%= @blogpost.body %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @blogpost.category %>
-</p>
+    <aside>
+        "That’s one long and useful list of stuff. Thanks for making the effort." ― Lenin
+    </aside>
+    <%= @blogpost.body.html_safe %>
+    <footer>
+        Posted on <%= @blogpost.created_at.strftime("%A, %B %d, %Y at %H:%M") %>
+        <br>
+        <div class="tags clearfix">
+            <% @blogpost.category.tr('^A-Za-z0-9', ' ').split.each do |tag| %>
+                <div class="tag"><a href="#"><%= tag %></a></div>
+            <% end %>
+        </div>
+    </footer>
+</article>
 
 <%= link_to 'Edit', edit_blogpost_path(@blogpost) %> |
 <%= link_to 'Back', blogposts_path %>
+

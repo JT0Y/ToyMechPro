@@ -2,7 +2,7 @@
 
 one:
   title: "Hello World"
-  body: "Hello, Welcome to my blog!"
+  body: "Hello, welcome to my blog! This is a simple rails app that I built to get my rails confidence back. I spend much of my day working with front-end technologies and PHP that I have neglected my time with ruby. As I write this blog post right now I have quite a bit setup considering the timeframe that I built it in. Here is the screenshot: http://cl.ly/3o262o0R1h2m . To accomplish all of this it was quite simple. I just generated a single scaffold and the rest was just styling. I used some codepen examples for my generally styling. I think it is progressing quite well. Additionally, I have hired someone from fiverr to make me a new logo for this blog. I plan to make this webpage my most aestetically pleasing. "
   category: "Random"
 
 two:
