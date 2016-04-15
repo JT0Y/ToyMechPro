@@ -1,5 +1,6 @@
 <h1 class="page-header">What would you like to Read?</h1>
 
+
 <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">Show All</button>
     <button class="button" data-filter=".design">Design</button>
@@ -8,13 +9,14 @@
     <button class="button" data-filter=".wordpress">Wordpress</button>
     <button class="button" data-filter=".work">Work</button>
     <button class="button" data-filter="numberGreaterThan50">Greater than 50</button>
-    <button class="button" data-filter=".misc">Miscellaneous</button>
+    <button class="button" data-filter=".miscellaneous">Miscellaneous</button>
 </div>
 
 <div class="grid">
     <% @blogposts.each do |blogpost| %>
         <%= link_to blogpost do %>
-            <div class="element-item design " data-category="rubyonrails">
+
+            <div class="element-item <%= blogpost.category.tr('^A-Za-z0-9', ' ').split.first.downcase %>" data-category="rubyonrails">
               <h3 class="name"><%= blogpost.title %></h3>
               <p class="symbol">大龙</p>
               <p class="number"><%= blogpost.id.to_s.first(3) %></p>
