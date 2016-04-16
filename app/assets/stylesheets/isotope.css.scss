@@ -20,7 +20,7 @@ body {
   background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
   color: #222;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   text-shadow: 0 1px white;
   cursor: pointer;
 }
@@ -87,12 +87,13 @@ body {
 .element-item {
   position: relative;
   float: left;
-  width: 12em;
-  height: 15em;
+  width: 10em;
+  height: 9em;
   margin: 5px;
   padding: 10px;
   background: #888;
   color: #262524;
+  border-radius: 5px;
 }
 
 .element-item > * {
