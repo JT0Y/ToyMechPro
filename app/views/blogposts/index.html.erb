@@ -16,11 +16,13 @@
     <% @blogposts.each do |blogpost| %>
         <%= link_to blogpost do %>
 
-            <div class="element-item <%= blogpost.category.tr('^A-Za-z0-9', ' ').split.first.downcase %>" data-category="rubyonrails">
+            <!-- <div class="element-item <%= blogpost.category.tr('^A-Za-z0-9', ' ').split.first.downcase %>" data-category="rubyonrails"> -->
+            <div class="element-item <%= blogpost.category.tr('^A-Za-z0-9', ' ').to_s.downcase %>" data-category="rubyonrails">
               <h3 class="name"><%= blogpost.title %></h3>
               <p class="symbol">大龙</p>
               <p class="number"><%= blogpost.id.to_s.first(3) %></p>
               <p class="weight"><%= blogpost.created_at.strftime("%Y-%m-%d") %></p>
+
             </div>
         <% end %>
         <!-- <%= link_to 'Show', blogpost %>

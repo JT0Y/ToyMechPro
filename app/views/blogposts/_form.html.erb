@@ -21,9 +21,9 @@
   </div>
   <div class="field">
     <%= f.label :category %><br>
-    <%= f.select :category, ['Miscellaneous','Design','RubyonRails','Javascript','Wordpress','Work','刘玥','Miscellaneous'],{prompt: "SELECT RELEVANT TAGS:"}, {:multiple => true, class: "form-control"} %>
+    <%= f.select :category, ['Miscellaneous','Design','RubyonRails','Javascript','Wordpress','Work','Education', 'PHP','Miscellaneous'],{prompt: "SELECT RELEVANT TAGS:"}, {:multiple => true, class: "form-control"} %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions" style="padding-top: 15px;">
+    <%= f.submit :class => 'btn btn-primary'%>
   </div>
 <% end %>
