@@ -25,15 +25,28 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
+.category{
+  padding: 0 3px;
 }
 
-.button:active,
-.button.is-checked {
-  background-color: #28F;
+.category:hover {
+  background-color: none;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+  border-bottom: 1px solid #000;
+}
+
+.category:active,
+.category.is-checked {
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+  color: #95a5a6;
+}
+
+.category:focus {
+  text-decoration: none;
+  outline: none;
+  color: #95a5a6;
 }
 
 .button.is-checked {
@@ -45,11 +58,7 @@ body {
   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
-.button:focus {
-  text-decoration: none;
-  border: none;
-  outline: none;
-}
+
 
 /* ---- button-group ---- */
 
@@ -71,9 +80,9 @@ body {
 
 /* ---- isotope ---- */
 
-// .grid {
-//   border: 1px solid #333;
-// }
+.grid {
+  padding: 9px 0 18px 0;
+}
 
 /* clear fix */
 .grid:after {

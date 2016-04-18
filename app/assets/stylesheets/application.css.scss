@@ -340,139 +340,158 @@ a:hover {
 // Styles for tilted social media icons
 
 * {
-              box-sizing: border-box;
-            }
-            *:focus, *:active, *:focus:active {
-              outline: none;
-            }
+  box-sizing: border-box;
+}
+*:focus, *:active, *:focus:active {
+  outline: none;
+}
 
-            .column {
-              float: left;
-              padding: 0 15px;
-              width: 50%;
-            }
+.column {
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+}
 
-            .set {
-              margin: 20px;
-            }
+.set {
+  margin: 20px;
+}
 
-            a.social {
-              display: inline-block;
-              height: 40px;
-              line-height: 40px;
-              margin-right: 10px;
-              overflow: hidden;
-              position: relative;
-              text-indent: -9999em;
-              visibility: hidden;
-              width: 40px;
-            }
-            a.social:before, a.social:after {
-              color: #fff;
-              content: "";
-              display: inline-block;
-              font-family: FontAwesome;
-              font-size: 30px;
-              height: 40px;
-              line-height: 44px;
-              position: absolute;
-              right: 0;
-              text-align: center;
-              text-indent: 0;
-              visibility: visible;
-              width: 40px;
-            }
-            a.social:after {
-              left: 0;
-              position: absolute;
-            }
-            a.facebook:before {
-              background: #3b5998;
-            }
-            a.facebook:after {
-              content: "\f09a";
-              top: -1px;
-            }
-            a.twitter:before {
-              background: #00aced;
-            }
-            a.twitter:after {
-              content: "\f099";
-              left: 0;
-              top: 0;
-            }
-            a.google-plus:before {
-              background: #ff4b39;
-            }
-            a.google-plus:after {
-              content: "\f0d5";
-              left: 2px;
-              top: -1px;
-            }
-            a.pinterest:before {
-              background: #cc2127;
-            }
-            a.pinterest:after {
-              content: "\f0d2";
-              font-size: 34px;
-              left: -1px;
-              top: -1px;
-            }
-            a.instagram:before {
-              background: #784cac;
-            }
-            a.instagram:after {
-              content: "\f16d";
-              top: -1px;
-            }
-            a.linked-in:before {
-              background: #007bb6;
-            }
-            a.linked-in:after {
-              content: "\f0e1";
-              top: -1px;
-            }
+a.social {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999em;
+  visibility: hidden;
+  width: 40px;
+}
+a.social:before, a.social:after {
+  color: #fff;
+  content: "";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 30px;
+  height: 40px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-indent: 0;
+  visibility: visible;
+  width: 40px;
+}
+a.social:after {
+  left: 0;
+  position: absolute;
+}
+a.facebook:before {
+  background: #3b5998;
+}
+a.facebook:after {
+  content: "\f09a";
+  top: -1px;
+}
+a.twitter:before {
+  background: #00aced;
+}
+a.twitter:after {
+  content: "\f099";
+  left: 0;
+  top: 0;
+}
+a.google-plus:before {
+  background: #ff4b39;
+}
+a.google-plus:after {
+  content: "\f0d5";
+  left: 2px;
+  top: -1px;
+}
+a.pinterest:before {
+  background: #cc2127;
+}
+a.pinterest:after {
+  content: "\f0d2";
+  font-size: 34px;
+  left: -1px;
+  top: -1px;
+}
+a.instagram:before {
+  background: #784cac;
+}
+a.instagram:after {
+  content: "\f16d";
+  top: -1px;
+}
+a.linked-in:before {
+  background: #007bb6;
+}
+a.linked-in:after {
+  content: "\f0e1";
+  top: -1px;
+}
 
-            .tilted a.social:after {
-              transform: rotate(-7deg);
-              transform-origin: center;
-            }
+.tilted a.social:after {
+  transform: rotate(-7deg);
+  transform-origin: center;
+}
 
-            .raised a.social:before,
-            .raised a:hover.social:before {
-              display: none;
-            }
-            .raised a.facebook:after,
-            .raised a:hover.facebook:after {
-              text-shadow: 0 0 3px #3b5998, 0 3px 3px #3b5998;
-            }
-            .raised a.twitter:after,
-            .raised a:hover.twitter:after {
-              text-shadow: 0 0 3px #00aced, 0 3px 3px #00aced;
-            }
-            .raised a.google-plus:after,
-            .raised a:hover.google-plus:after {
-              text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
-            }
-            .raised a.pinterest:after,
-            .raised a:hover.pinterest:after {
-              text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
-            }
-            .raised a.instagram:after,
-            .raised a:hover.instagram:after {
-              text-shadow: 0 0 3px #784cac, 0 3px 3px #784cac;
-            }
-            .raised a.linked-in:after,
-            .raised a:hover.linked-in:after {
-              text-shadow: 0 0 3px #007bb6, 0 3px 3px #007bb6;
-            }
+.raised a.social:before,
+.raised a:hover.social:before {
+  display: none;
+}
+.raised a.facebook:after,
+.raised a:hover.facebook:after {
+  text-shadow: 0 0 3px #3b5998, 0 3px 3px #3b5998;
+}
+.raised a.twitter:after,
+.raised a:hover.twitter:after {
+  text-shadow: 0 0 3px #00aced, 0 3px 3px #00aced;
+}
+.raised a.google-plus:after,
+.raised a:hover.google-plus:after {
+  text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
+}
+.raised a.pinterest:after,
+.raised a:hover.pinterest:after {
+  text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
+}
+.raised a.instagram:after,
+.raised a:hover.instagram:after {
+  text-shadow: 0 0 3px #784cac, 0 3px 3px #784cac;
+}
+.raised a.linked-in:after,
+.raised a:hover.linked-in:after {
+  text-shadow: 0 0 3px #007bb6, 0 3px 3px #007bb6;
+}
 
-            .bg-tilt a {
-              overflow: visible;
-            }
-            .bg-tilt a:before {
-              transition: all .3s ease-in;
-            }
-            .bg-tilt a:hover:before {
-              transform: rotate(-7deg);
-            }
+.bg-tilt a {
+  overflow: visible;
+}
+.bg-tilt a:before {
+  transition: all .3s ease-in;
+}
+.bg-tilt a:hover:before {
+  transform: rotate(-7deg);
+}
+.rounded a.social:before {
+  border-radius: 50%;
+}
+
+.overflowed.rounded a.social:before,
+.overflowed.rounded a:hover.social:before {
+  height: 32px;
+  margin: 4px;
+  width: 32px;
+}
+
+// custom color button on social button page
+.btn-theme {
+    background-color: #1AB188;
+    border: none
+}
+.btn-theme:hover {
+    background-color: #179b77;
+}
