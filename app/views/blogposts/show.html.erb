@@ -6,7 +6,8 @@
     </header>
 
     <aside>
-        "That’s one long and useful list of stuff. Thanks for making the effort." ― Lenin
+        <% render 'randomquote' %>
+        <%= @randomquote.shuffle.first %>
     </aside>
     <%= @blogpost.body.html_safe %>
     <footer>
