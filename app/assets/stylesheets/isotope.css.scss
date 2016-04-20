@@ -27,6 +27,7 @@ body {
 
 .category{
   padding: 0 3px;
+  font-weight: 700;
 }
 
 .category:hover {
@@ -38,9 +39,9 @@ body {
 
 .category:active,
 .category.is-checked {
-  font-weight: 700;
-  border-bottom: 1px solid #000;
-  color: #95a5a6;
+  font-weight: 400;
+  border-bottom: 1px solid #bdc3c7;
+  color: #bdc3c7;
 }
 
 .category:focus {
