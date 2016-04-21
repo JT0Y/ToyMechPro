@@ -10,7 +10,6 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   get 'pages/about' => 'pages#about'
-  get 'pages/contact' => 'pages#contact'
 
   resources :messages, only: [:new, :create]
 
