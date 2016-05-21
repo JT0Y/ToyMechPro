@@ -41,7 +41,7 @@ class BlogpostsController < ApplicationController
   # PATCH/PUT /blogposts/1.json
   def update
     respond_to do |format|
-      if @blogpost.update(blogpost_params)
+      if @blogpost.myupdate(blogpost_params)
         format.html { redirect_to @blogpost, notice: 'Blogpost was successfully updated.' }
         format.json { render :show, status: :ok, location: @blogpost }
       else

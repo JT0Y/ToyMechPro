@@ -14,7 +14,7 @@
         Posted on <%= @blogpost.created_at.strftime("%A, %B %d, %Y at %H:%M") %>
         <br>
         <div class="tags clearfix">
-            <% @blogpost.category.tr('^A-Za-z0-9', ' ').split.each do |tag| %>
+        <% @blogpost.category.split.each do |tag| %>
                 <div class="tag"><a href="#"><%= tag %></a></div>
             <% end %>
         </div>
