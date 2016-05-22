@@ -5,7 +5,7 @@ class MessageMailerTest < ActionMailer::TestCase
   test "message me" do
     msg = Message.new(
       name: 'cornholio',
-      email: 'cornholio@example.com',
+      email: 'jtoy23@gmail.com',
       subject: 'Hi',
       content: 'Hello from the internet'
     )
