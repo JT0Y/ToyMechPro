@@ -1,14 +1,14 @@
 <nav class="menu" tabindex="0">
     <div class="smartphone-menu-trigger"></div>
     <header class="avatar">
-        <%= image_tag "/assets/jtoy.png", style: "background-color: #fff;" %>
+        <%= image_tag "jtoy.png", style: "background-color: #fff;" %>
         <!-- <h2>Joshua Toy</h2> -->
     </header>
     <ul class="menu-items">
         <li tabindex="0"><i class="fa fa-home" aria-hidden="true"></i> <span><%= link_to 'Home', root_path %></span></li>
         <li tabindex="0"><i class="fa fa-envelope" aria-hidden="true"></i> <span><span><%= link_to 'Contact', messages_new_path %></span></span></li>
         <li tabindex="0"><i class="fa fa-user" aria-hidden="true"></i> <span><%= link_to 'About', pages_about_path %></span></li>
-        <li tabindex="0"><i class="fa fa-file" aria-hidden="true"></i> <span><%= link_to 'Resumé', '/assets/JoshuaToyResume.pdf' %></span></li>
+        <li tabindex="0"><i class="fa fa-file" aria-hidden="true"></i> <span><%= link_to 'Resumé', 'JoshuaToyResume.pdf' %></span></li>
         <br>
         <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'Somatic', "http://somatic.io/" %></span></li>
         <li tabindex="0"><i class="fa fa-cogs" aria-hidden="true"></i> <span><%= link_to 'The Dictator', "http://dictionary.bitballoon.com/" %></span></li>
