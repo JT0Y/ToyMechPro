@@ -1,5 +1,5 @@
 class BlogpostsController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: ENV['LOGIN'], except: :index
+  http_basic_authenticate_with name: "admin", password: ENV['LOGIN'], except: [:index, :show]
   before_action :set_blogpost, only: [:show, :edit, :update, :destroy]
 
   # GET /blogposts
