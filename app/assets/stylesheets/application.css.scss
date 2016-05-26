@@ -35,13 +35,13 @@ body {
   padding-left: 240px;
 }
 main {
-  // position: relative;
-  // height: 100vh;
+  position: relative;
+  min-height: 500px;
 }
 main .helper {
   background: rgba(0, 0, 0, 0.2);
   // color: #ffea92;
-  // position: absolute;
+  position: absolute;
   margin: 1% 1%;
   // left: 50%;
   // transform: translate3d(-50%, -50%, 0);
@@ -407,35 +407,35 @@ a.twitter:after {
   left: 0;
   top: 0;
 }
-a.google-plus:before {
+a.codepen:before {
   background: #ff4b39;
 }
-a.google-plus:after {
-  content: "\f0d5";
+a.codepen:after {
+  content: "\f1cb";
   left: 2px;
   top: -1px;
 }
-a.pinterest:before {
+a.stripe:before {
   background: #cc2127;
 }
-a.pinterest:after {
-  content: "\f0d2";
+a.stripe:after {
+  content: "\f1f5";
   font-size: 34px;
   left: -1px;
   top: -1px;
 }
-a.instagram:before {
+a.wechat:before {
   background: #784cac;
 }
-a.instagram:after {
-  content: "\f16d";
+a.wechat:after {
+  content: "\f1d7";
   top: -1px;
 }
-a.linked-in:before {
+a.github:before {
   background: #007bb6;
 }
-a.linked-in:after {
-  content: "\f0e1";
+a.github:after {
+  content: "\f113";
   top: -1px;
 }
 
@@ -456,20 +456,20 @@ a.linked-in:after {
 .raised a:hover.twitter:after {
   text-shadow: 0 0 3px #00aced, 0 3px 3px #00aced;
 }
-.raised a.google-plus:after,
-.raised a:hover.google-plus:after {
+.raised a.codepen:after,
+.raised a:hover.codepen:after {
   text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
 }
-.raised a.pinterest:after,
-.raised a:hover.pinterest:after {
+.raised a.stripe:after,
+.raised a:hover.stripe:after {
   text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
 }
-.raised a.instagram:after,
-.raised a:hover.instagram:after {
+.raised a.wechat:after,
+.raised a:hover.wechat:after {
   text-shadow: 0 0 3px #784cac, 0 3px 3px #784cac;
 }
-.raised a.linked-in:after,
-.raised a:hover.linked-in:after {
+.raised a.github:after,
+.raised a:hover.github:after {
   text-shadow: 0 0 3px #007bb6, 0 3px 3px #007bb6;
 }
 
