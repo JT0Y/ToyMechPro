@@ -13,7 +13,6 @@
 </div>
 
 <div class="grid">
-
     <% @blogposts.each do |blogpost| %>
         <%= link_to blogpost do %>
             <div class="element-item <%= blogpost.category.downcase %>" data-category="rubyonrails">

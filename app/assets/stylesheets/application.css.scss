@@ -33,19 +33,20 @@ body {
   margin: 0;
   color: #666;
   padding-left: 240px;
+  position: relative;
+  height: 100%;
 }
 main {
-  // position: relative;
   // height: 100vh;
 }
 main .helper {
   background: rgba(0, 0, 0, 0.2);
-  // color: #ffea92;
-  // position: absolute;
+  color: #ffea92;
+  position: absolute;
   margin: 1% 1%;
-  // left: 50%;
-  // transform: translate3d(-50%, -50%, 0);
-  // padding: 1.2em 2em;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 1.2em 2em;
   text-align: center;
   border-radius: 20px;
   font-size: 2em;
@@ -59,10 +60,10 @@ main .helper span {
 
 .menu {
   background: #5bc995;
-  height: 100vh;
+  height: 100%;
   width: 240px;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: -20px;
   left: 0;
   z-index: 5;
   outline: none;
@@ -77,6 +78,7 @@ main .helper span {
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #ffea92;
+  width: 75%;
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
 .menu .avatar h2 {
@@ -98,18 +100,7 @@ main .helper span {
   transition: all 0.15s linear;
   cursor: pointer;
 }
-// .menu ul li.icon-dashboard {
-//   background-image: url("http://www.entypo.com/images//gauge.svg");
-// }
-// .menu ul li.icon-customers {
-//   background-image: url("http://www.entypo.com/images//briefcase.svg");
-// }
-// .menu ul li.icon-users {
-//   background-image: url("http://www.entypo.com/images//users.svg");
-// }
-// .menu ul li.icon-settings {
-//   background-image: url("http://www.entypo.com/images//tools.svg");
-// }
+
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -234,7 +225,7 @@ body {
 .container {
   margin: 20px auto;
   padding: 40px 20px;
-  width: 80%;
+  width: 90%;
   min-height: 375px;
   background: #fff;
   border-radius: 6px;
