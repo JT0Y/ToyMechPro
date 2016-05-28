@@ -60,12 +60,12 @@ main .helper span {
 
 .menu {
   background: #5bc995;
-  height: 100%;
+  height: 110%;
   width: 240px;
-  position: absolute;
+  position: fixed;
   top: -20px;
   left: 0;
-  z-index: 5;
+  z-index: 1000;
   outline: none;
 }
 .menu .avatar {
