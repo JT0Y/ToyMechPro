@@ -256,6 +256,9 @@ article aside {
   color: #999;
 }
 @media screen and (max-width: 700px) {
+  .menu .avatar {
+    margin-top: 20px;
+  }
   article aside {
     float: none;
     width: auto;
@@ -321,7 +324,9 @@ a:hover {
   transition: opacity 200ms;
 }
 
-
+.menu .avatar {
+    margin-top: 20px;
+  }
 
 
 // Styles for tilted social media icons
