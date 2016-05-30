@@ -172,6 +172,9 @@ main .helper span {
   }
 }
 @media screen and (max-width: 400px) {
+  .smartphone-menu-trigger{
+    margin-top: 20px;
+  }
   body {
     padding-left: 0;
   }
