@@ -9047,67 +9047,75 @@ body {
   margin: 0;
   color: #666;
   padding-left: 240px;
+  position: relative;
+  height: 100%;
 }
 
-/* line 42, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 43, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 main .helper {
   background: rgba(0, 0, 0, 0.2);
+  color: #ffea92;
+  position: absolute;
   margin: 1% 1%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 1.2em 2em;
   text-align: center;
   border-radius: 20px;
   font-size: 2em;
   font-weight: bold;
 }
 
-/* line 55, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 56, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 main .helper span {
   color: rgba(0, 0, 0, 0.2);
   font-size: 0.4em;
   display: block;
 }
 
-/* line 61, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 62, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu {
   background: #5bc995;
-  height: 100vh;
+  height: 110%;
   width: 240px;
   position: fixed;
-  top: 0;
+  top: -20px;
   left: 0;
-  z-index: 5;
+  z-index: 1000;
   outline: none;
 }
 
-/* line 71, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 72, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu .avatar {
   background: rgba(0, 0, 0, 0.1);
   padding: 2em 0.5em;
   text-align: center;
 }
 
-/* line 76, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 77, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu .avatar img {
   width: 100px;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #ffea92;
+  width: 75%;
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
 }
 
-/* line 83, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 85, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu .avatar h2 {
   font-weight: normal;
   margin-bottom: 0;
 }
 
-/* line 87, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 89, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu ul {
   list-style: none;
   padding: 0.5em 0;
   margin: 0;
 }
 
-/* line 92, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 94, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu ul li {
   padding: 0.5em 1em 0.5em 3em;
   font-size: 0.95em;
@@ -9119,39 +9127,39 @@ main .helper span {
   cursor: pointer;
 }
 
-/* line 114, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 105, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 117, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 108, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .menu ul li:focus {
   outline: none;
 }
 
 @media screen and (max-width: 900px) and (min-width: 400px) {
-  /* line 121, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 112, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   body {
     padding-left: 90px;
   }
 
-  /* line 124, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 115, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu {
     width: 90px;
   }
 
-  /* line 127, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 118, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .avatar {
     padding: 0.5em;
     position: relative;
   }
 
-  /* line 131, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 122, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .avatar img {
     width: 60px;
   }
 
-  /* line 134, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 125, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .avatar h2 {
     opacity: 0;
     position: absolute;
@@ -9165,13 +9173,13 @@ main .helper span {
     transition: all 0.15s ease-in-out;
   }
 
-  /* line 146, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 137, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .avatar:hover h2 {
     opacity: 1;
     transform: translate3d(0px, -50%, 0);
   }
 
-  /* line 150, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 141, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu ul li {
     height: 60px;
     background-position: center center;
@@ -9179,7 +9187,7 @@ main .helper span {
     position: relative;
   }
 
-  /* line 156, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 147, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu ul li span {
     opacity: 0;
     position: absolute;
@@ -9192,7 +9200,7 @@ main .helper span {
     transition: all 0.15s ease-in-out;
   }
 
-  /* line 167, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 158, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu ul li span:before {
     content: '';
     width: 0;
@@ -9206,19 +9214,24 @@ main .helper span {
     transform: translateY(-50%);
   }
 
-  /* line 179, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 170, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu ul li:hover span {
     opacity: 1;
     transform: translate3d(0px, -50%, 0);
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 185, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 176, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  .smartphone-menu-trigger {
+    margin-top: 20px;
+  }
+
+  /* line 179, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   body {
     padding-left: 0;
   }
 
-  /* line 188, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 182, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu {
     width: 230px;
     box-shadow: 0 0 0 100em transparent;
@@ -9226,7 +9239,7 @@ main .helper span {
     transition: all 0.3s ease-in-out;
   }
 
-  /* line 194, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 188, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .smartphone-menu-trigger {
     width: 40px;
     height: 40px;
@@ -9235,7 +9248,7 @@ main .helper span {
     background: #5bc995;
   }
 
-  /* line 201, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 195, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .smartphone-menu-trigger:before,
   .menu .smartphone-menu-trigger:after {
     content: '';
@@ -9249,40 +9262,40 @@ main .helper span {
     transform: translate3d(-50%, -50%, 0);
   }
 
-  /* line 213, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 207, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu .smartphone-menu-trigger:after {
     top: 55%;
     transform: translate3d(-50%, -50%, 0);
   }
 
-  /* line 217, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 211, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu ul li {
     padding: 1em 1em 1em 3em;
     font-size: 1.2em;
   }
 
-  /* line 221, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 215, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu:focus {
     transform: translate3d(0, 0, 0);
     box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
   }
 
-  /* line 225, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 219, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   .menu:focus .smartphone-menu-trigger {
     pointer-events: none;
   }
 }
-/* line 230, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 224, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 body {
   font-family: Montserrat,sans-serif;
   background: #958671;
 }
 
-/* line 235, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 229, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .container {
   margin: 20px auto;
   padding: 40px 20px;
-  width: 80%;
+  width: 90%;
   min-height: 375px;
   background: #fff;
   border-radius: 6px;
@@ -9290,18 +9303,18 @@ body {
   box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 246, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 240, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 article {
   margin-left: 20%;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 250, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 244, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   article {
     margin: 0;
   }
 }
-/* line 254, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 248, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 article header h2 {
   margin-bottom: 15px;
   font-size: 1.5em;
@@ -9309,7 +9322,7 @@ article header h2 {
   line-height: 1.3;
 }
 
-/* line 260, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 254, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 article aside {
   float: left;
   width: 20%;
@@ -9320,7 +9333,12 @@ article aside {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 269, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  /* line 263, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+  .menu .avatar {
+    margin-top: 20px;
+  }
+
+  /* line 266, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
   article aside {
     float: none;
     width: auto;
@@ -9328,7 +9346,7 @@ article aside {
     line-height: 1.5em;
   }
 }
-/* line 276, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 273, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 article p {
   margin: 0 0 20px 0;
   font-size: 1em;
@@ -9336,26 +9354,26 @@ article p {
   color: #666;
 }
 
-/* line 282, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 279, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 article footer {
   font-size: .9em;
   color: #999;
 }
 
-/* line 287, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 284, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a {
   color: #666;
   text-decoration: none;
   outline: none;
 }
 
-/* line 292, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 289, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a:hover {
   text-decoration: none;
   color: #bdc3c7;
 }
 
-/* line 297, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 294, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -9365,13 +9383,13 @@ a:hover {
   height: 0;
 }
 
-/* line 306, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 303, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tags {
   width: 80%;
   margin-top: 20px;
 }
 
-/* line 310, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 307, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tags .tag {
   padding: 10px 20px;
   box-sizing: border-box;
@@ -9383,50 +9401,55 @@ a:hover {
   transition: opacity 200ms ease-out;
 }
 
-/* line 320, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 317, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tags .tag:before {
   content: "#";
 }
 
-/* line 323, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 320, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tags .tag a {
   color: #FFF;
 }
 
-/* line 326, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 323, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tags .tag a:hover {
   color: #EEE;
 }
 
-/* line 329, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 326, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tags .tag:hover {
   opacity: 1;
   transition: opacity 200ms;
 }
 
-/* line 340, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 331, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+.menu .avatar {
+  margin-top: 20px;
+}
+
+/* line 338, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 343, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 341, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 *:focus, *:active, *:focus:active {
   outline: none;
 }
 
-/* line 347, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 345, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .column {
   float: left;
   padding: 0 15px;
   width: 50%;
 }
 
-/* line 353, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 351, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .set {
   margin: 20px;
 }
 
-/* line 357, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 355, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.social {
   display: inline-block;
   height: 40px;
@@ -9439,7 +9462,7 @@ a.social {
   width: 40px;
 }
 
-/* line 368, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 366, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.social:before, a.social:after {
   color: #fff;
   content: "";
@@ -9456,151 +9479,151 @@ a.social:before, a.social:after {
   width: 40px;
 }
 
-/* line 383, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 381, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.social:after {
   left: 0;
   position: absolute;
 }
 
-/* line 387, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 385, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.facebook:before {
   background: #3b5998;
 }
 
-/* line 390, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 388, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.facebook:after {
   content: "\f09a";
   top: -1px;
 }
 
-/* line 394, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 392, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.twitter:before {
   background: #00aced;
 }
 
-/* line 397, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 395, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 a.twitter:after {
   content: "\f099";
   left: 0;
   top: 0;
 }
 
-/* line 402, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.google-plus:before {
+/* line 400, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.codepen:before {
   background: #ff4b39;
 }
 
-/* line 405, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.google-plus:after {
-  content: "\f0d5";
+/* line 403, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.codepen:after {
+  content: "\f1cb";
   left: 2px;
   top: -1px;
 }
 
-/* line 410, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.pinterest:before {
+/* line 408, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.stripe:before {
   background: #cc2127;
 }
 
-/* line 413, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.pinterest:after {
-  content: "\f0d2";
+/* line 411, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.stripe:after {
+  content: "\f1f5";
   font-size: 34px;
   left: -1px;
   top: -1px;
 }
 
-/* line 419, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.instagram:before {
+/* line 417, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.wechat:before {
   background: #784cac;
 }
 
-/* line 422, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.instagram:after {
-  content: "\f16d";
+/* line 420, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.wechat:after {
+  content: "\f1d7";
   top: -1px;
 }
 
-/* line 426, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.linked-in:before {
+/* line 424, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.github:before {
   background: #007bb6;
 }
 
-/* line 429, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-a.linked-in:after {
-  content: "\f0e1";
+/* line 427, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+a.github:after {
+  content: "\f113";
   top: -1px;
 }
 
-/* line 434, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 432, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .tilted a.social:after {
   transform: rotate(-7deg);
   transform-origin: center;
 }
 
-/* line 439, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 437, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .raised a.social:before,
 .raised a:hover.social:before {
   display: none;
 }
 
-/* line 443, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 441, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .raised a.facebook:after,
 .raised a:hover.facebook:after {
   text-shadow: 0 0 3px #3b5998, 0 3px 3px #3b5998;
 }
 
-/* line 447, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 445, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .raised a.twitter:after,
 .raised a:hover.twitter:after {
   text-shadow: 0 0 3px #00aced, 0 3px 3px #00aced;
 }
 
-/* line 451, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-.raised a.google-plus:after,
-.raised a:hover.google-plus:after {
+/* line 449, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+.raised a.codepen:after,
+.raised a:hover.codepen:after {
   text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
 }
 
-/* line 455, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-.raised a.pinterest:after,
-.raised a:hover.pinterest:after {
+/* line 453, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+.raised a.stripe:after,
+.raised a:hover.stripe:after {
   text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
 }
 
-/* line 459, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-.raised a.instagram:after,
-.raised a:hover.instagram:after {
+/* line 457, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+.raised a.wechat:after,
+.raised a:hover.wechat:after {
   text-shadow: 0 0 3px #784cac, 0 3px 3px #784cac;
 }
 
-/* line 463, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
-.raised a.linked-in:after,
-.raised a:hover.linked-in:after {
+/* line 461, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+.raised a.github:after,
+.raised a:hover.github:after {
   text-shadow: 0 0 3px #007bb6, 0 3px 3px #007bb6;
 }
 
-/* line 468, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 466, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .bg-tilt a {
   overflow: visible;
 }
 
-/* line 471, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 469, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .bg-tilt a:before {
   transition: all .3s ease-in;
 }
 
-/* line 474, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 472, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .bg-tilt a:hover:before {
   transform: rotate(-7deg);
 }
 
-/* line 477, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 475, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .rounded a.social:before {
   border-radius: 50%;
 }
 
-/* line 481, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 479, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .overflowed.rounded a.social:before,
 .overflowed.rounded a:hover.social:before {
   height: 32px;
@@ -9608,18 +9631,18 @@ a.linked-in:after {
   width: 32px;
 }
 
-/* line 489, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 487, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .btn-theme {
   background-color: #1AB188;
   border: none;
 }
 
-/* line 493, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 491, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .btn-theme:hover {
   background-color: #179b77;
 }
 
-/* line 499, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
+/* line 497, /Users/ToyMechQM/Desktop/ToyMechPro/app/assets/stylesheets/application.css.scss */
 .button-spacer {
   margin-top: 66px;
 }
