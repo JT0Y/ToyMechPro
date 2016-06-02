@@ -404,11 +404,11 @@ a.codepen:after {
   left: 2px;
   top: -1px;
 }
-a.stripe:before {
+a.bitbucket:before {
   background: #cc2127;
 }
-a.stripe:after {
-  content: "\f1f5";
+a.bitbucket:after {
+  content: "\f171";
   font-size: 34px;
   left: -1px;
   top: -1px;
@@ -449,8 +449,8 @@ a.github:after {
 .raised a:hover.codepen:after {
   text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
 }
-.raised a.stripe:after,
-.raised a:hover.stripe:after {
+.raised a.bitbucket:after,
+.raised a:hover.bitbucket:after {
   text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
 }
 .raised a.wechat:after,

@@ -240,12 +240,24 @@ textarea {
               <a href="https://www.facebook.com/profile.php?id=100010668903210" class="social facebook">Facebook</a>
               <a href="https://twitter.com/JoshuaToys" class="social twitter">Twitter</a>
               <a href="http://codepen.io/toymechqm/" class="social codepen">Codepen</a>
-              <a href="##" class="social stripe">Stripe</a>
-              <a href="##" class="social wechat">Wechat</a>
+              <a href="https://bitbucket.org/ToyMechQM/" class="social bitbucket">Stripe</a>
+              <a href="#" class="pop social wechat">Wechat</a>
               <a href="https://github.com/toymechqm/" class="social github">Github</a>
             </div>
 
-            <br>
+
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <button type="button" class="close" data-dismiss="modal">   <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <%= image_tag('qr.png') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <h3>Get on The Mailing List</h3>
             <form action="/" method="post">
@@ -306,5 +318,12 @@ $('.tab a').on('click', function (e) {
 
   $(target).fadeIn(600);
 
+});
+
+$(function() {
+    $('.pop').on('click', function() {
+      $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+      $('#imagemodal').modal('show');
+    });
 });
 </script>
