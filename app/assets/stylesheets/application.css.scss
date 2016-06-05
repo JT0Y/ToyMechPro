@@ -67,6 +67,7 @@ main .helper span {
   left: 0;
   z-index: 1000;
   outline: none;
+  overflow: scroll;
 }
 .menu .avatar {
   background: rgba(0, 0, 0, 0.1);
