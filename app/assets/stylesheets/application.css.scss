@@ -24,33 +24,33 @@ h1, h2, h3, h4, h5{
 
 // Styles for main menu split layout
 .avatar > h2 {
-  color: #fff;
+    color: #fff;
 }
 
 body {
-  font-family: Montserrat,sans-serif;
-  background: #958671;
-  margin: 0;
-  color: #666;
-  padding-left: 240px;
-  position: relative;
-  height: 100%;
+    font-family: Montserrat,sans-serif;
+    background: #958671;
+    margin: 0;
+    color: #666;
+    padding-left: 240px;
+    position: relative;
+    height: 100%;
 }
 main {
   // height: 100vh;
 }
 main .helper {
-  background: rgba(0, 0, 0, 0.2);
-  color: #ffea92;
-  position: absolute;
-  margin: 1% 1%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  padding: 1.2em 2em;
-  text-align: center;
-  border-radius: 20px;
-  font-size: 2em;
-  font-weight: bold;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffea92;
+    position: absolute;
+    margin: 1% 1%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    padding: 1.2em 2em;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: bold;
 }
 main .helper span {
   color: rgba(0, 0, 0, 0.2);
@@ -222,28 +222,28 @@ main .helper span {
 }
 
 body {
-  font-family: Montserrat,sans-serif;
-  background: #958671;
+    font-family: Montserrat,sans-serif;
+    background: #958671;
 }
 
 .container {
-  margin: 20px auto;
-  padding: 40px 20px;
-  width: 90%;
-  min-height: 375px;
-  background: #fff;
-  border-radius: 6px;
-  box-sizing: border-box;
-  box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 40px 20px;
+    width: 95%;
+    min-height: 375px;
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 2px rgba(0, 0, 0, 0.1);
 }
 
 article {
   margin-left: 20%;
 }
 @media screen and (max-width: 700px) {
-  article {
-    margin: 0;
-  }
+    article {
+        margin: 0;
+    }
 }
 article header h2 {
   margin-bottom: 15px;
@@ -436,31 +436,31 @@ a.github:after {
 
 .raised a.social:before,
 .raised a:hover.social:before {
-  display: none;
+    display: none;
 }
 .raised a.facebook:after,
 .raised a:hover.facebook:after {
-  text-shadow: 0 0 3px #3b5998, 0 3px 3px #3b5998;
+    text-shadow: 0 0 3px #3b5998, 0 3px 3px #3b5998;
 }
 .raised a.twitter:after,
 .raised a:hover.twitter:after {
-  text-shadow: 0 0 3px #00aced, 0 3px 3px #00aced;
+    text-shadow: 0 0 3px #00aced, 0 3px 3px #00aced;
 }
 .raised a.codepen:after,
 .raised a:hover.codepen:after {
-  text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
+    text-shadow: 0 0 3px #ff4b39, 0 3px 3px #ff4b39;
 }
 .raised a.bitbucket:after,
 .raised a:hover.bitbucket:after {
-  text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
+    text-shadow: 0 0 3px #cc2127, 0 3px 3px #cc2127;
 }
 .raised a.wechat:after,
 .raised a:hover.wechat:after {
-  text-shadow: 0 0 3px #784cac, 0 3px 3px #784cac;
+    text-shadow: 0 0 3px #784cac, 0 3px 3px #784cac;
 }
 .raised a.github:after,
 .raised a:hover.github:after {
-  text-shadow: 0 0 3px #007bb6, 0 3px 3px #007bb6;
+    text-shadow: 0 0 3px #007bb6, 0 3px 3px #007bb6;
 }
 
 .bg-tilt a {
@@ -478,9 +478,9 @@ a.github:after {
 
 .overflowed.rounded a.social:before,
 .overflowed.rounded a:hover.social:before {
-  height: 32px;
-  margin: 4px;
-  width: 32px;
+    height: 32px;
+    margin: 4px;
+    width: 32px;
 }
 
 // custom color button on social button page
